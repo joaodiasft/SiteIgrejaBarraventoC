@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick.css" />
+
+
+
+
+  <title>Site Base</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="links-menu">
+        <ul class="nav-links">
+          <li><a href="princ.html">Incio</a> </li>
+          <li><a href="#sobre">Sobre</a> </li>
+          <li><a href="#cultos">Cultos</a> </li>
+          <li><a href="#eventos">Eventos</a> </li>
+          <li><a href="sorteio.html">Sorteio</a> </li>
+          <li><a href="#contato">Contatos</a> </li>
+          <!--<i class="fa-solid fa-house"></i>-->
+        </ul>
+      </div>
+
+      <div class="logo">
+        <img src="Design sem nome (13).png" alt="logo da assembleia">
+        <h1 class="inome">Igreja Barravento</h1>
+        <h2 class="inome2">Venha nos visitar e fazer parte dessa familia</h2>
+        <!--<i class="fa-solid fa-place-of-worship" style="color: #ffbb00;"></i>-->
+      </div>
+
+      <div class="event-info">
+        <h2 class="ievento">Proximos Eventos</h2>
+        <p id="evento-nome" style="color: blueviolet;">Nome do evento</p>
+        <p id="evento-data">Data do evento</p>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <!--Alerta-->
+  <div id="alerta" class="alerta">
+    <p>Olá! Bem-vindo ao Site. <br>
+      <span>Cultos Toda Quarta e Domingo</span>
+    </p>
+    <button class="botao-cta" onclick="fecharAlerta()">Acessar</button>
+  </div>
+  <!--Alerta-->
+
+  <section class="hero-section">
+    <div class="hero">
+      <h1>Igreja Assembleia de Deus Barravento</h1>
+      <p>Bem-vindo ao site da nossa igreja! É uma alegria imensa tê-lo(a) aqui. Somos uma comunidade de fé que busca
+        viver e compartilhar o amor de Deus em nossas vidas e no mundo ao nosso redor. Aqui, você encontrará informações
+        sobre nossas atividades, cultos, eventos e ministérios, além de recursos que podem ajudá-lo(a) em sua jornada
+        espiritual.</p>
+      <button class="conh">Conhecer mais</button>
+    </div>
+  </section>
+
+
+
+
+
+  <section class="banner">
+
+  </section>
+
+  <section class="sobre-igreja" id="sobre">
+    <div class="container">
+      <h2 class="titulo">Sobre a nossa igreja</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <img class="imgs" src="Design sem nome.png" alt="Imagem da nossa igreja">
+        </div>
+        <div class="col-md-6">
+          <p class="descricao">
+            Somos uma igreja cristã evangélica comprometida em levar a palavra de Deus a todos os povos e nações.
+            Acreditamos que a salvação é possível através da fé em Jesus Cristo, nosso salvador. Estamos localizados na
+            cidade de São Paulo, mas atendemos a membros de várias regiões da cidade e do país. Temos uma equipe
+            pastoral dedicada e uma comunidade ativa, com diversas atividades e eventos para toda a família.
+          </p>
+          <ul class="lista-valores">
+            <li>Amor ao próximo</li>
+            <li>Fidelidade a Deus</li>
+            <li>Comunhão entre os irmãos</li>
+            <li>Serviço à comunidade</li>
+          </ul>
+          <a href="#sobre" class="botao-cta">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="cultos" id="cultos">
+    <h2 class="titulo">Cultos</h2>
+    <div class="container-card">
+      <div class="content pont">
+
+
+        <div class="card">
+          <div class="card-content">
+            <div class="image">
+              <img src="Culto de Celebração.png" alt="">
+            </div>
+            <div class="icons-media">
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-square-whatsapp"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="cnome">
+              <span class="c-nome">Culto de Ensino</span>
+              <span class="c-data">12/04 - 19:30 Hrs</span>
+              <span class="c-responsavel">Pregador.: Pastor Adão</span>
+            </div>
+            <div class="button-card">
+              <button class="saibaMais">Saiba Mais</button>
+              <button class="enderenco">Enderenço</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card-content">
+            <div class="image">
+              <img src="Rua Jose de Almeida, 94 - Residencial Barravento.png" alt="">
+            </div>
+            <div class="icons-media">
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-square-whatsapp"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="cnome">
+              <span class="c-nome">Sexta de Renovação</span>
+              <span class="c-data">14/04 - 19:30 Hrs</span>
+              <span class="c-responsavel">Pregador: Irmao Divino</span>
+            </div>
+            <div class="button-card">
+              <button class="saibaMais">Saiba Mais</button>
+              <button class="enderenco">Enderenço</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <div class="image">
+              <img src="Escola Bíblica Dominical (3).png" alt="">
+            </div>
+            <div class="icons-media">
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-square-whatsapp"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="cnome">
+              <span class="c-nome">Escola Bibilica Dominical</span>
+              <span class="c-data">16/04 - 08:30 Hrs</span>
+              <span class="c-responsavel">Professor: Gesley Leão</span>
+            </div>
+            <div class="button-card">
+              <button class="saibaMais">Saiba Mais</button>
+              <button class="enderenco">Enderenço</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <div class="image">
+              <img src="Culto de Celebração.png" alt="">
+            </div>
+            <div class="icons-media">
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-square-whatsapp"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="cnome">
+              <span class="c-nome">Culto de Celebração</span>
+              <span class="c-data">16/04 - 19:00 Hrs</span>
+              <span class="c-responsavel">Pregador.: Pastor Adão</span>
+            </div>
+            <div class="button-card">
+              <button class="saibaMais">Saiba Mais</button>
+              <button class="enderenco">Enderenço</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="titulo-events" id="eventos">Eventos</h2>
+
+    <div class="container-card">
+      <div class="content pont">
+        <div class="card">
+          <div class="card-content">
+            <div class="image">
+              <img src="Voce e nossa convidada para o (3).png" alt="">
+            </div>
+            <div class="icons-media">
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-square-whatsapp"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="cnome">
+              <span class="c-nome">Econtro Perolas</span>
+              <span class="c-data">20/04 - 19:30 Hrs</span>
+              <span class="c-responsavel">Professor: Mirian</span>
+            </div>
+            <div class="button-card">
+              <button class="saibaMais">Saiba Mais</button>
+              <button class="enderenco">Enderenço</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <div class="image">
+              <img src="Galinhada (2).png" alt="">
+            </div>
+            <div class="icons-media">
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-square-whatsapp"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="cnome">
+              <span class="c-nome">Bazar e Galinhada</span>
+              <span class="c-data">15/04 - Dia Todo</span>
+              <span class="c-responsavel">Igreja Barravento</span>
+            </div>
+            <div class="button-card">
+              <button class="saibaMais">Saiba Mais</button>
+              <button class="enderenco">Enderenço</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card-content">
+            <div class="image">
+              <img src="Janta de Casais.png" alt="">
+            </div>
+            <div class="icons-media">
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-square-whatsapp"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="cnome">
+              <span class="c-nome">Jantar de Casais</span>
+              <span class="c-data">14/04 - 19:30 Hrs</span>
+              <span class="c-responsavel">Igreja Barravento</span>
+            </div>
+            <div class="button-card">
+              <button class="saibaMais">Saiba Mais</button>
+              <button class="enderenco">Enderenço</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <div class="image">
+              <img src="Peça pelo Whatsapp (2).png" alt="">
+            </div>
+            <div class="icons-media">
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-square-whatsapp"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="cnome">
+              <span class="c-nome">Venda de Mini-Pizza</span>
+              <span class="c-data">16/04 - 19:00 Hrs</span>
+              <span class="c-responsavel">Igreja Barravento</span>
+            </div>
+            <div class="button-card">
+              <button class="saibaMais">Saiba Mais</button>
+              <button class="enderenco">Enderenço</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <section class="sorteio" id="sorteio">
+    <h2 class="titulo-sorteio">Cultos</h2>
+    <h3 class="info-sorteio">Em produção</h3>
+
+  </section>-->
+
+  <section class="contato" id="contato">
+    <h2 class="titulo-contato">Contato</h2>
+    <div class="contato-container">
+      <div class="title">
+        <!-- <h2>Contato</h2> -->
+      </div>
+      <div class="box-contato">
+        <div class="contact form">
+          <h3>Mande a sua mensagem</h3>
+          <form>
+            <div class="formBox">
+              <div class="row50">
+                <div class="inputBox">
+                  <span>Primeiro Nome</span>
+                  <input type="text" placeholder="Jonh">
+                </div>
+                <div class="inputBox">
+                  <span>Sobrenome</span>
+                  <input type="text" placeholder="Josh">
+                </div>
+                <div class="inputBox">
+                  <span>Ultimo Nome</span>
+                  <input type="text" placeholder="Joshs">
+                </div>
+              </div>
+
+              <div class="row50">
+                <div class="inputBox">
+                  <span>Email</span>
+                  <input type="text" placeholder="Jonh@email.com">
+                </div>
+                <div class="inputBox">
+                  <span>Telefone</span>
+                  <input type="text" placeholder="+55 99 99999-9999">
+                </div>
+                <div class="inputBox">
+                  <span>Whatsapp</span>
+                  <input type="text" placeholder="+55 99 99999-9999">
+                </div>
+                <div class="inputBox">
+                  <span>Instagran</span>
+                  <input type="text" placeholder="@jhonvlogs">
+                </div>
+              </div>
+
+              <div class="row100">
+                <div class="inputBox">
+                  <span>Deixe sua mensagem</span>
+                  <textarea placeholder="Deixe aqui sua mensagem..."></textarea>
+                </div>
+              </div>
+
+              <div class="row100">
+                <div class="inputBox">
+                  <button type="submit" value="enviar" class="btn-submit">Enviar</button>
+                </div>
+              </div>
+
+            </div>
+
+          </form>
+        </div>
+        <div class="contact info">
+          <h3>Informações de Contato</h3>
+          <div class="infoBox">
+            <div>
+              <span><i class="fa-solid fa-location-dot"></i></span>
+              <p>Igreja Assembleia de Deus Barravento <br> Campo de Campinas</p>
+            </div>
+            <div>
+              <span><i class="fa-regular fa-envelope"></i></span>
+              <a href="mailto:igrejabarravento@gmail.com">IgrejaBarravento@gmail.com</a>
+            </div>
+            <div>
+              <span><i class="fa-solid fa-phone"></i></span>
+              <a href="tel:+55 62 3548-8715">+55 62 3548-8715</a>
+            </div>
+            <ul class="sci">
+              <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-square-whatsapp"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+          </div>
+
+
+        </div>
+        <div class="contact map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3823.0519864098114!2d-49.31294377304686!3d-16.62415989999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef4c6aa3b8aab%3A0x135fd5795e1d5909!2sAD%20Campinas%20Barra%20Vento!5e0!3m2!1spt-BR!2sbr!4v1681328593999!5m2!1spt-BR!2sbr"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="ministerios">
+    <h2>Nossos Ministérios</h2>
+    <div class="ministerios-container">
+      <div class="ministerio-kids">
+        <h3>Ministério de Crianças</h3>
+        <p>O Ministério de Crianças é voltado para crianças de 3 a 10 anos, proporcionando um ambiente seguro e
+          acolhedor para que elas possam aprender sobre a Palavra de Deus de forma lúdica e divertida. Nossos
+          voluntários são treinados e comprometidos em cuidar de cada criança com amor e carinho.</p>
+      </div>
+      <div class="ministerio-jovens">
+        <h3>Ministério de Jovens</h3>
+        <p>O Ministério de Jovens é destinado a jovens entre 11 e 30 anos, oferecendo oportunidades para que eles possam
+          crescer em sua fé, se conectar com outros jovens e servir a comunidade. Nós temos uma variedade de atividades
+          e eventos, incluindo estudos bíblicos, acampamentos, retiros e projetos sociais.</p>
+      </div>
+      <div class="ministerio-homens">
+        <h3>Ministério de Homens</h3>
+        <p>O Ministério de Homens é voltado para homens de todas as idades, com o objetivo de encorajá-los a crescer em
+          sua relação com Cristo, com suas famílias e com a comunidade. Nós oferecemos oportunidades para que os homens
+          possam se conectar com outros homens e desenvolver relacionamentos significativos através de estudos bíblicos,
+          grupos de oração e eventos especiais.</p>
+      </div>
+      <div class="ministerio-mulheres">
+        <h3>Ministério de Mulheres</h3>
+        <p>O Ministério de Mulheres é um grupo de mulheres que se reúne regularmente para estudar a Bíblia, compartilhar
+          experiências, encorajar umas às outras e servir à comunidade. Nós temos eventos especiais ao longo do ano,
+          incluindo retiros, conferências e projetos sociais. Todas as mulheres são bem-vindas!</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="agradecimento">
+    <h2>Agradecimento</h2>
+    <p>Agradecemos a todos os nossos fiéis e membros da igreja pela participação nas nossas celebrações e eventos, e
+      pelo apoio e confiança em nossa missão de propagar o evangelho.</p>
+    <p>Também gostaríamos de agradecer aos nossos pastores e líderes por seu trabalho árduo e dedicação ao longo dos
+      anos.</p>
+    <p>Venha nos visitar e fazer parte dessa historia.</p>
+    <p>Enderenço .: Rua Jose de Almeida,94 - Residencial Barravento</p>
+  </section>
+
+
+
+  <footer class="footer">
+    <div class="contf">
+      <div class="footer-col">
+        <h4>Igreja Barravento</h4>
+        <ul>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Cultos</a></li>
+          <li><a href="#">Ministrantes</a></li>
+          <li><a href="#">Doações</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Midia</h4>
+        <ul>
+          <li><a href="midia.html">Fotos</a></li>
+          <li><a href="midia.html">Fotos - Jovens</a></li>
+          <li><a href="midia.html">Fotos - Cultos </a></li>
+          <li><a href="midia.html">Fotos - Eventos</a></li>
+          <li><a href="midia.html">Equipe de Midia</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Doações</h4>
+        <ul>
+          <li><a href="#">-</a></li>
+          <li><a href="#">-</a></li>
+          <li><a href="#">-</a></li>
+          <li><a href="#">-</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Segui-nos</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <footer class="fo2">
+    <div class="copyright">
+      &copy; 2023 Joao Claudio. Todos os direitos reservados.
+    </div>
+  </footer>
+
+
+
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/3fc24d52c4.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
+
+</html>

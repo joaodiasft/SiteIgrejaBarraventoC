@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .card-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .cardi {
+            width: 300px;
+            height: 400px;
+            perspective: 1000px;
+            margin: 20px;
+            border-radius: 25px;
+        }
+
+        .card-inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.8s;
+        }
+
+        .front,
+        .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            box-sizing: border-box;
+            border-radius: 25px;
+        }
+
+        .front {
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .img img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .info {
+            font-size: 15px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5px;
+            padding: 5px;
+        }
+
+        .info h3 {
+            margin-bottom: 20px;
+        }
+
+        .info p {
+            margin-bottom: 15px;
+        }
+
+        .icons-socias a {
+            display: inline-block;
+            margin-right: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .back {
+            background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(marcosnves.jpg);
+            background-blur: 10px;
+            background-size: cover;
+            transform: rotateY(180deg);
+        }
+
+        .back .background-image img {
+            width: 300px;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 25px 25px 0px 0px;
+        }
+
+        .back h2 {
+            color: #000000;
+            text-align: center;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .flipped {
+            transform: rotateY(-180deg);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section class="card-section">
+        <div class="cardi" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="front">
+                    <div class="img">
+                        <img src="marcosnves.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Nome da Pessoa</h3>
+                        <p>Informações sobre a pessoa</p>
+                    </div>
+                    <div class="icons-socias">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="back">
+                    <h2>Nome da Pessoa</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardi" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="front">
+                    <div class="img">
+                        <img src="marcosnves.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Nome da Pessoa</h3>
+                        <p>Informações sobre a pessoa</p>
+                    </div>
+                    <div class="icons-socias">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="back">
+                    <h2>Nome da Pessoa</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardi" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="front">
+                    <div class="img">
+                        <img src="marcosnves.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Nome da Pessoa</h3>
+                        <p>Informações sobre a pessoa</p>
+                    </div>
+                    <div class="icons-socias">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="back">
+                    <h2>Nome da Pessoa</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardi" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="front">
+                    <div class="img">
+                        <img src="marcosnves.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Nome da Pessoa</h3>
+                        <p>Informações sobre a pessoa</p>
+                    </div>
+                    <div class="icons-socias">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="back">
+                    <h2>Nome da Pessoa</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardi" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="front">
+                    <div class="img">
+                        <img src="marcosnves.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Nome da Pessoa</h3>
+                        <p>Informações sobre a pessoa</p>
+                    </div>
+                    <div class="icons-socias">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="back">
+                    <h2>Nome da Pessoa</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardi" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="front">
+                    <div class="img">
+                        <img src="marcosnves.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Nome da Pessoa</h3>
+                        <p>Informações sobre a pessoa</p>
+                    </div>
+                    <div class="icons-socias">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="back">
+                    <h2>Nome da Pessoa</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardi" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="front">
+                    <div class="img">
+                        <img src="marcosnves.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Nome da Pessoa</h3>
+                        <p>Informações sobre a pessoa</p>
+                    </div>
+                    <div class="icons-socias">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="back">
+                    <h2>Nome da Pessoa</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardi" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="front">
+                    <div class="img">
+                        <img src="marcosnves.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Nome da Pessoa</h3>
+                        <p>Informações sobre a pessoa</p>
+                    </div>
+                    <div class="icons-socias">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="back">
+                    <h2>Nome da Pessoa</h2>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <script>
+        function flipCard(cardi) {
+            cardi.querySelector('.card-inner').classList.toggle('flipped');
+        }
+        let currentIndex = 0;
+        const cards = document.querySelectorAll('.cardi');
+
+        function showCards() {
+            cards.forEach((card, index) => {
+                if (index === currentIndex || index === currentIndex - 1 || index === currentIndex + 1) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        function nextCard() {
+            currentIndex = (currentIndex + 1) % cards.length;
+            showCards();
+        }
+
+        showCards();
+        setInterval(nextCard, 5000);
+    </script>
+
+    <script src="https://kit.fontawesome.com/3fc24d52c4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
